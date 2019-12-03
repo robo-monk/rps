@@ -1,0 +1,26 @@
+#main{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+#ui{
+
+    padding: 30px;
+
+}
+
+button {
+  background-color: #347FC4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
