@@ -5,29 +5,47 @@
     <head>
         <title>RPS</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+
+        <!-- import the fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+
 
     </head>
 
     <body>
         
-        <div id="main">       
-             <table id="ui">
+    <div id="main">      
+        <table id="ui">
 
-            <th><button type="button" id="rock" onclick="store_ui(1)">ROCK</button></th>
-            <th><button type="button" id="paper" onclick="store_ui(2)">PAPER</button></th>
-            <th><button type="button" id="scissors" onclick="store_ui(3)">SCISSORS</button></th>
+            <tr> 
 
+                <th><button data-key="37" type="button" class="button" id="rock" onclick="store_ui(1)">ROCK</button></th>
+                <th><button data-key="38" type="button" class="button" id="paper" onclick="store_ui(2)">PAPER</button></th>
+                <th><button data-key="39" type="button" class="button" id="scissors" onclick="store_ui(3)">SCISSORS</button></th>
 
+            </tr>
         </table>
 
-        <div id="cpu_out"> CPU:  </div>
+        <table id="info">
 
-        <p id="results"> RESULTS: </p>
+            <tr>
+                <th>
+                    <div id="txt_cpu"> CPU: </div>
+                    <div id="cpu"> - </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+            
+                    <div id="results"> </div>
+                </th>
+            </tr>
 
+        </table>
     
     </div>
 
+    <script src="script.js"></script>
 
     </body>
 

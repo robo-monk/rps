@@ -1,11 +1,44 @@
 #main{
+  
     position: absolute;
-    top: 40%;
-    left: 40%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    font-size: 1.5rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.02);
+
+
+}
+
+#ui{
+
+  padding: 40px;
+    margin: auto;
+
+}
+
+#info{
+
+  padding: 50px;
+    margin: auto;
+
+}
+
+#txt_cpu{
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  justify-content: center;
+
+}
+
+#cpu {
+
+  font-family: 'Roboto Mono', monospace !important; 
+  font-size: 3.5rem;
+
+
 }
 
 #ui{
@@ -14,13 +47,37 @@
 
 }
 
-button {
-  background-color: #347FC4; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
+.button {
+
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  color: black;
+  background: rgba(0,0,0,0.4);
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.02);
+  border-color: #E6EBE0;
+  background-color:  #E6EBE0;
+
 }
+
+.animating {
+
+  transform: scale(1.1);
+  border-color: #F4F1BB;
+  box-shadow: 0 0 1rem #F4F1BB;
+
+}
+
+.button:hover, .button:focus, .button:active {
+    background-color: rgb(214, 216, 211);
+    border-color:  rgb(214, 216, 211);    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
